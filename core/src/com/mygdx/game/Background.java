@@ -35,11 +35,10 @@ public class Background {
     }
 
     public void update(){
-        for (int i = 0; i < backs.length; i++) {
+        for (int i = 0; i < backs.length; i++) { //делаем фон подвижным непрерывно
             backs[i].pos.x -= speed;
-                    }
-
-        if (backs[0].pos.x < -800){ //делаем фон подвижным непрерывно
+         }
+        if (backs[0].pos.x < -800){
             backs[0].pos.x = 0;
             backs[1].pos.x = 800;
         }
